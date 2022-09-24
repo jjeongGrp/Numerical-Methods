@@ -59,6 +59,10 @@ c1[0] = -1.         # change c1
 print(c1)           
 print(a1)           # a1 is not affected by the change
 
-
+a2 = [[1, 2, 3],\
+      [4, 5, 6],\
+          [7, 8, 9]]
+print(a2[1])        # Print second row (element 1)
+print(a2[1][2])     # Print third element of second row   
 
 
