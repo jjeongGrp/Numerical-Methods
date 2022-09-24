@@ -66,3 +66,85 @@ print(a2[1])        # Print second row (element 1)
 print(a2[1][2])     # Print third element of second row   
 
 
+# Arithmetic Operators
+# addition, subraction, multiplication, 
+# division, exponentiation, modular division
+# a += b,  a = a + b    addition
+# a -= b,  a = a - b    subraction
+# a *= b,  a = a * b    multiplication
+# a /= b,  a = a / b    division
+# a **= b, a = a ** b   exponentiation
+# a %= b, a = a % b     modular division
+
+s = 'Hello'
+t = 'to you'
+a3 = [1, 2, 3]
+print(3*s)      # Repetition
+print(3*a3)      # Repetition
+print(a3 + [4,5]) # Append elements
+print(s + ' ' + t)     # Concatenation
+print(3 + s)      # This addition returns unspported operant types
+
+
+# Comparision Operators
+
+a3 = 2      # Integer
+b2 = 1.999  # Floating point
+c2 = '2'    # String
+print(a3 > b2)  
+print(a3 == c2)
+print((a3 > b2) and (a3 != c2))
+print((a3 > b2) or (a3 == b2))
+
+
+# Type conversion
+a = 5
+b = -3.6
+d = '4.0'
+print(a + b)         # 1.4
+print(int(b))        # -3.6 -> -3
+print(complex(a,b))  # (5-3.6j)
+print(float(d))      # 4.0
+# print(int(d))     # ValueError: invalid literal for int() with base 10: '4.0'
+
+
+# Reading Input
+
+a = input('Input a: ')
+print(a,type(a))
+b = eval(a)
+print(b,type(b))
+
+# type 10.0
+#Input a: 10.0
+#10.0 <class 'str'>
+#10.0 <class 'float'>
+
+# type 11**2
+#Input a: 11**2
+#11**2 <class 'str'>
+#121 <class 'int'>
+
+a = eval(input('Input a:'))
+print(a,type(a))
+
+# type 3
+#Input a:3
+#3 <class 'int'>
+
+
+
+# Printing Output
+a = 1234.56789
+b = [2, 4, 6, 8]
+print(a,b) # 1234.56789 [2, 4, 6, 8]
+print('a = ',a, '\nb =',b) 
+# a =  1234.56789 
+# b = [2, 4, 6, 8]
+
+
+
+
+
+
+
