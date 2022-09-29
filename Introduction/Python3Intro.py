@@ -143,8 +143,24 @@ print('a = ',a, '\nb =',b)
 # b = [2, 4, 6, 8]
 
 
+a = 1234.56789
+n = 5876
+print('{:7.2f}'.format(a))
+print('n = {:6d}'.format(n))  # Pad with spaces
+print('n = {:06d}'.format(n))  # Pad with zeros
+print('{:12.3e} {:6d}'.format(a,n) )
 
 
-
-
+# Writing Data to a File
+f = open('testopen','w')
+for k in range(101,111):
+    f.write('{:4d} {:6d}'.format(k,k**2))
+    f.write('\n')
+f.close()
+    
+# Error control
+try:
+    c = 12.0/0.0
+except ZeroDivisionError:
+    print('Division by zero')
 
