@@ -8,6 +8,8 @@
 import numpy as np
 from gaussElimin import *
 
+# Vandermode matrices tend to be ill-conditioned
+# A_{ij} = v^{n-j}_{i}, i=1,2,...,n,  j=1,2,...,n
 def vandermode(v):
     n = len(v)
     A = np.zeros((n,n))
